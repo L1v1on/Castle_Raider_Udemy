@@ -27,4 +27,10 @@ x += hsp;
 y += vsp;
 
 // Apply Animation
-image_xscale = facing;
+if (hsp != 0) {
+	image_xscale = facing;
+	sprite_index = s_player_walk;
+} else {
+	sprite_index = s_player_idle;	
+}
+
